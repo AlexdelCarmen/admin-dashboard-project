@@ -2,7 +2,40 @@
   box-sizing: border-box;
 }
 
+:root {
+  --light-color-1: #ffffff;
+  --light-color-2: #e2e8f0;
+  --light-color-3: #6b6b6b;
+  --accent-color-1: #1992d4;
+  --accent-color-2: #f0b52c;
+  --xl-size: 32px;
+  --lg-size: 24px;
+  --md-size: 18px;
+  --sm-size: 14px;
+}
+
 body {
   padding: 0;
   margin: 0;
+  font-family: "Roboto", sans-serif;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-template-rows: 1fr 3fr;
+}
+
+header {
+  background-color: var(--light-color-1);
+  grid-area: 1 / 2 / 2 / 3;
+  height: 10vh;
+}
+
+.navbar {
+  background-color: var(--accent-color-1);
+  grid-area: 1 / 1 / 3 / 2;
+  height: 100vh;
+}
+
+main {
+  background-color: var(--light-color-2);
+  grid-area: 2 / 2 / 3 / 3;
 }
