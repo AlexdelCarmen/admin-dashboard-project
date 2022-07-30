@@ -20,7 +20,7 @@ body {
   font-family: "Roboto", sans-serif;
   display: grid;
   grid-template-columns: 230px 3fr;
-  grid-template-rows: 1fr 3fr;
+  grid-template-rows: 220px 3fr;
 }
 
 .navbar {
@@ -33,7 +33,7 @@ body {
 header {
   background-color: var(--accent-color-1);
   grid-area: 1 / 1 / 3 / 2;
-  height: 100vh;
+  height: 100%;
   width: 15vw;
   color: var(--light-color-1);
 }
@@ -185,4 +185,38 @@ a > .iconify {
 main {
   background-color: var(--light-color-2);
   grid-area: 2 / 2 / 3 / 3;
+  display: grid;
+  grid-template-columns: 3fr 300px;
+}
+
+.project-cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.project-card {
+  width: 400px;
+  margin: 10px 3rem;
+  background-color: var(--light-color-1);
+  padding: 18px;
+  border-left: solid 10px var(--accent-color-2);
+  border-radius: 10px;
+  box-shadow: 10px 10px 20px var(--light-color-3);
+}
+
+.projects-title {
+  font-size: var(--lg-size);
+  margin-left: 3rem;
+}
+
+.project-title {
+  margin-left: 0.5rem;
+}
+
+.project-description {
+  font-size: var(--sm-size);
+  color: var(--light-color-3);
+  padding: 10px;
 }
