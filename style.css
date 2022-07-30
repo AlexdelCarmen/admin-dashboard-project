@@ -229,3 +229,30 @@ main {
   color: var(--light-color-3);
   padding: 10px;
 }
+
+.announcements {
+  margin: 0 1rem;
+}
+
+.announcements-container {
+  background-color: var(--light-color-1);
+  margin-right: 1rem;
+  margin-bottom: 15px;
+  padding: 1rem;
+  border-radius: 15px;
+  box-shadow: 10px 10px 20px var(--light-color-3);
+}
+
+.announcements-title {
+  font-size: var(--lg-size);
+}
+
+.announcement-text {
+  font-size: var(--sm-size);
+  color: var(--light-color-3);
+}
+
+.announcement-text:not(.last) {
+  border-bottom: 1px solid var(--light-color-3);
+  padding-bottom: 15px;
+}
