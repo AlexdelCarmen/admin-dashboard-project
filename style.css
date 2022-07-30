@@ -222,6 +222,7 @@ main {
 .icons-wrapper > .iconify {
   font-size: var(--lg-size);
   margin: 1rem 0.6rem;
+  cursor: pointer;
 }
 
 .project-description {
