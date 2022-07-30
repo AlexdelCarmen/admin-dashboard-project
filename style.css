@@ -215,6 +215,15 @@ main {
   margin-left: 0.5rem;
 }
 
+.icons-wrapper {
+  margin-left: 200px;
+}
+
+.icons-wrapper > .iconify {
+  font-size: var(--lg-size);
+  margin: 1rem 0.6rem;
+}
+
 .project-description {
   font-size: var(--sm-size);
   color: var(--light-color-3);
